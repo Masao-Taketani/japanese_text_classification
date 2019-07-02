@@ -1,4 +1,4 @@
-# text_classification
+# Text Classification with Various DNN Methods
 Trying various DNN text classifier methods for a **Japanese corpus**, I aim to gain some experices for NLP. For this investigation, I use  [**livedoor corpus**](https://www.rondhuit.com/download.html#ldcc).
 <br>
 ## Tokenizer
