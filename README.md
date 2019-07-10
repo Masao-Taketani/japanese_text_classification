@@ -9,4 +9,4 @@ Since the program is implemented in [Python](https://github.com/python), [**meca
 <br>
 ## word_embedding
 As for case [1] above, **pretrained fastText embedding(Japanese)** is used, which can be found here [URL]https://drive.google.com/open?id=0ByFQ96A4DgSPUm9wVWRLdm5qbmc.<br>
-(As for case [2] above, a word embedding matrix is trained while training each end-to-end DNN model.)<br>
+As for case [2] above, a word embedding matrix is trained while training each end-to-end DNN model.<br>
