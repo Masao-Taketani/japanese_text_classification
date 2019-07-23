@@ -123,6 +123,6 @@ livedoor-homme      0.930     0.702     0.800       114
      macro avg      0.941     0.931     0.934      1474
   weighted avg      0.941     0.940     0.939      1474
 ```
-##Conclusion
+## Conclusion
 The best model among the 6 models above is **CNN with sentencepiece**.<br>
 Every DNN method used in this investigation, which are MLP, CNN and biLSTM, outperformed when **SentencePiece** is used for a word tokenizer. 
