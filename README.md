@@ -125,4 +125,4 @@ livedoor-homme      0.930     0.702     0.800       114
 ```
 ## Conclusion
 The best model among the 6 models above is **CNN with sentencepiece**.<br>
-Every DNN method used in this investigation, which are MLP, CNN and biLSTM, outperformed when **SentencePiece** is used for a word tokenizer. 
+Every DNN method used in this investigation, such as MLP, CNN and biLSTM, outperformed when **SentencePiece** was used for a word tokenizer compared to their MeCab+ipadicNEologd tokenizer. 
