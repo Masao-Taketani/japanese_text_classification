@@ -1,0 +1,4 @@
+sentencepiece
+jupyter
+tensorflow
+pandas
