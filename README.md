@@ -12,6 +12,8 @@ To train this, I referred to the webpage titled ["Wikipediaから日本語コー
 ## Word Embedding
 - As for case [1] above, **pretrained fastText embedding(Japanese)** is used, which can be found here [URL]https://drive.google.com/open?id=0ByFQ96A4DgSPUm9wVWRLdm5qbmc.<br>
 - As for case [2] above, a word embedding matrix is trained while training each end-to-end DNN model.<br>
+## Japanese BERT
+I used [bert-japanese](https://github.com/yoheikikuta/bert-japanese) implemented by **"yoheikikuta"**.
 ## Results
 **[1]MeCab + ipadicNEologd + fastText**
 - MLP(Multi-layer Perceptron)
@@ -124,8 +126,24 @@ livedoor-homme      0.930     0.702     0.800       114
   weighted avg      0.941     0.940     0.939      1474
 ```
 - BERT<br>
-**Coming Soon**
+```
+                precision    recall  f1-score   support
+
+dokujo-tsushin      0.953     0.931     0.942       175
+  it-life-hack      0.974     0.955     0.964       154
+ kaden-channel      0.982     0.982     0.982       167
+livedoor-homme      0.943     0.868     0.904       114
+   movie-enter      0.956     0.989     0.972       174
+        peachy      0.920     0.940     0.930       184
+          smax      0.969     0.995     0.981       186
+  sports-watch      0.994     0.982     0.988       163
+    topic-news      0.969     0.987     0.978       157
+
+     micro avg      0.962     0.962     0.962      1474
+     macro avg      0.962     0.959     0.960      1474
+  weighted avg      0.962     0.962     0.962      1474
+```
 
 ## Conclusion
-The best model among the 6 models above is **CNN with sentencepiece**.<br>
-For each DNN model used in this investigation, such as MLP, CNN or biLSTM, a model that used **SentencePiece** outperformed the one that used MeCab, ipadicNEologd and fastText. 
+The best model among the 7 models above is **CNN with sentencepiece**.<br>
+For each DNN model tested on both MeCab and Sentence Piece, such as MLP, CNN or biLSTM, a model that used **Sentence Piece** outperformed the one that used fastText+MeCab+ipadicNEologd. 
