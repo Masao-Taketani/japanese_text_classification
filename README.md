@@ -145,5 +145,6 @@ livedoor-homme      0.943     0.868     0.904       114
 ```
 
 ## Conclusion
-The best model among the 7 models above is **CNN with sentencepiece**.<br>
-For each DNN model tested on both MeCab and Sentence Piece, such as MLP, CNN or biLSTM, a model that used **Sentence Piece** outperformed the one that used fastText+MeCab+ipadicNEologd. 
+The best model among the 7 models above is **CNN with Sentence Piece**.<br>
+Results may be changed if you do more complicated classification tasks.<br>
+For each DNN model tested on both MeCab and Sentence Piece, such as MLP, CNN or biLSTM, a model that used **Sentence Piece** outperformed the one that used fastText+MeCab+ipadicNEologd.
