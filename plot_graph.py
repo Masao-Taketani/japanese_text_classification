@@ -12,7 +12,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     """
     if normalize:
         cm = np.round(cm.astype('float') / cm.sum(axis=1)[:, np.newaxis], 3)
-        print("Normalized confusion matrix")
+        print("Recall-wise Normalized Confusion Matrix")
     else:
         print('Confusion matrix, without normalization')
     print(cm)
