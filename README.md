@@ -13,7 +13,7 @@ To train this, I referred to the webpage titled ["Wikipediaから日本語コー
 - As for case [1] above, **pretrained fastText embedding(Japanese)** is used, which can be found here [URL]https://drive.google.com/open?id=0ByFQ96A4DgSPUm9wVWRLdm5qbmc.<br>
 - As for case [2] above, a word embedding matrix is trained while training each end-to-end DNN model.<br>
 ## Japanese BERT
-I used [bert-japanese](https://github.com/yoheikikuta/bert-japanese) implemented by **"yoheikikuta"**.
+I used [**bert-japanese**](https://github.com/yoheikikuta/bert-japanese) implemented by **"yoheikikuta"**.
 ## Results
 **[1]MeCab + ipadicNEologd + fastText**
 - MLP(Multi-layer Perceptron)
