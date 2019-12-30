@@ -14,6 +14,21 @@ To train this, I referred to the webpage titled ["Wikipediaから日本語コー
 - As for case [2] above, a word embedding matrix is trained while training each end-to-end DNN model.<br>
 ## Japanese BERT
 I used [**bert-japanese**](https://github.com/yoheikikuta/bert-japanese) implemented by **"yoheikikuta"**.
+Instead of using the trained SentencePiece and the pratrained BERT model, I trained them from scratch, only a few changes are listed below.
+  - I trained SentencePiece with 8,000 words instead of 32,000.
+  - I used newer Japanese Wikipedia dataset than the one he used.
+  - I pretrained BERT model up to 1,300,000 steps instead of 1,400,000.
+The pretrained result is shown as below.
+```
+***** Eval results *****
+global_step = 1300000
+loss = 1.3378378
+masked_lm_accuracy = 0.71464056
+masked_lm_loss = 1.2572908
+next_sentence_accuracy = 0.97375
+next_sentence_loss = 0.08065516
+```
+**more details are coming soon**
 ## Results
 **[1]MeCab + ipadicNEologd + fastText**
 - MLP(Multi-layer Perceptron)
@@ -125,7 +140,7 @@ livedoor-homme      0.930     0.702     0.800       114
      macro avg      0.941     0.931     0.934      1474
   weighted avg      0.941     0.940     0.939      1474
 ```
-- BERT<br>
+- [tentative result] BERT<br>
 ```
                 precision    recall  f1-score   support
 
