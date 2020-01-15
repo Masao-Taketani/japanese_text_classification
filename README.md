@@ -28,7 +28,7 @@ masked_lm_loss = 1.2572908
 next_sentence_accuracy = 0.97375
 next_sentence_loss = 0.08065516
 ```
-**more details are coming soon**
+
 ## Results
 **[1]MeCab + ipadicNEologd + fastText**
 - MLP(Multi-layer Perceptron)
@@ -140,23 +140,23 @@ livedoor-homme      0.930     0.702     0.800       114
      macro avg      0.941     0.931     0.934      1474
   weighted avg      0.941     0.940     0.939      1474
 ```
-- [tentative result] BERT<br>
+- BERT<br>
 ```
                 precision    recall  f1-score   support
 
-dokujo-tsushin      0.953     0.931     0.942       175
-  it-life-hack      0.974     0.955     0.964       154
- kaden-channel      0.982     0.982     0.982       167
-livedoor-homme      0.943     0.868     0.904       114
-   movie-enter      0.956     0.989     0.972       174
-        peachy      0.920     0.940     0.930       184
-          smax      0.969     0.995     0.981       186
-  sports-watch      0.994     0.982     0.988       163
+dokujo-tsushin      0.958     0.920     0.939       175
+  it-life-hack      0.933     0.987     0.959       154
+ kaden-channel      0.976     0.964     0.970       167
+livedoor-homme      0.922     0.825     0.870       114
+   movie-enter      0.944     0.977     0.960       174
+        peachy      0.922     0.967     0.944       184
+          smax      0.989     0.973     0.981       186
+  sports-watch      1.000     0.982     0.991       163
     topic-news      0.969     0.987     0.978       157
 
-     micro avg      0.962     0.962     0.962      1474
-     macro avg      0.962     0.959     0.960      1474
-  weighted avg      0.962     0.962     0.962      1474
+      accuracy                          0.958      1474
+     macro avg      0.957     0.954     0.955      1474
+  weighted avg      0.958     0.958     0.958      1474
 ```
 
 ## Conclusion
